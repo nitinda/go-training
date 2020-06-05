@@ -1,1 +1,1 @@
-# _Goland Training_
+# _Golang Training_
