@@ -17,4 +17,21 @@ func main() {
 	default:
 		fmt.Println("No matching case ... !")
 	}
+
+	fmt.Println("=================== Switch with Interface ====================")
+
+	var j interface{} = 1.0
+	switch j.(type) {
+	case int:
+		fmt.Println("Variable is type Interger")
+	case string:
+		fmt.Println("Varriable is type String")
+	case float64:
+		fmt.Println("Varriable is type Float64")
+	case float32:
+		fmt.Println("Varriable is type Float32")
+	default:
+		fmt.Println("Unknown Type")
+	}
+
 }
